@@ -2,7 +2,7 @@
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Parent msg="I am the parent"/>
 </template>
 
 <!-- SCRIPT -->
