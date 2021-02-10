@@ -1,6 +1,8 @@
 export default {
     name: "Child",
-    props: {
-        msg: String
+    data() {
+        return {
+            message: "I am the child"
+        }
     }
 }

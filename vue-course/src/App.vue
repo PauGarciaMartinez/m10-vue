@@ -2,7 +2,7 @@
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <Parent msg="I am the parent"/>
+  <Parent/>
 </template>
 
 <!-- SCRIPT -->

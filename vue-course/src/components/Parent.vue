@@ -1,7 +1,7 @@
 <!-- TEMPLATE -->
 <template>
-    <h1> {{ msg }} </h1>
-    <Child msg="I am the child"/>
+    <h1> {{ message }} </h1>
+    <Child/>
 </template>
 
 <!-- SCRIPT -->

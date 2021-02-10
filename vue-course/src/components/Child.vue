@@ -1,6 +1,6 @@
 <!-- TEMPLATE -->
 <template>
-    <h2> {{ msg }} </h2>
+    <h2> {{ message }} </h2>
 </template>
 
 <!-- SCRIPT -->
