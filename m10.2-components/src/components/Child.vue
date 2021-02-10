@@ -1,6 +1,12 @@
 <!-- TEMPLATE -->
 <template>
-  
+  <ul>
+      <li v-for:"item in items">
+          <button>
+              <span></span>
+          </button>
+      </li>
+  </ul>
 </template>
 
 <!-- SCRIPT -->
