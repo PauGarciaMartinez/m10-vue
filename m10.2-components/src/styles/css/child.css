@@ -25,7 +25,13 @@
   font-size: 1.2rem;
   font-weight: 700;
   background-color: #2fac78;
+  border-radius: 0.2rem;
   border: none;
   outline: none;
+}
+
+.item-btn:hover {
+  background-color: #1d8d60;
+  cursor: pointer;
 }
 /*# sourceMappingURL=child.css.map */
