@@ -1,12 +1,17 @@
 <!-- TEMPLATE -->
 <template>
   <Modal>
-    <h1 v-slot:header>{{ title }}</h1>
-    <div v-slot:body>
-      <input type="text" id="converter"></input>
+    <template v-slot:header>
+      <h1>{{ title }}</h1>
+    </template>
+    <template v-slot:body>
+      <input type="text" id="converter">
       <p></p>
-    </div>
-    <button v:slot:footer>Accept</button>
+    </template>
+    <template v:slot:footer>
+      <button>Close</button>
+    </template>
+    
 
   </Modal>
 </template>
