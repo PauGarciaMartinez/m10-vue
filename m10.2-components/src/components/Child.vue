@@ -1,12 +1,15 @@
 <!-- TEMPLATE -->
 <template>
-  <ul>
-      <li v-for:"item in items">
-          <button>
-              <span></span>
-          </button>
+  <div>
+    <ul>
+      <li v-for="item in items" :key="item.id">
+        <h2>{{ item.name }}</h2>
+        <button @click="addMore">
+            <span>{{ item.number }}</span>
+        </button>
       </li>
-  </ul>
+    </ul>
+  </div>
 </template>
 
 <!-- SCRIPT -->

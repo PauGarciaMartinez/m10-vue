@@ -1,4 +1,4 @@
-import Parent from "./parent/parent.js"
+import Parent from "./../components/Parent.vue"
 
 export default {
     name: 'App',
