@@ -1,0 +1,31 @@
+.item-wrapper {
+  width: auto;
+  margin: 0 auto;
+}
+
+.items-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.item {
+  list-style-type: none;
+  width: 50%;
+  border: 3px solid #2fac78;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  background-color: white;
+}
+
+.item-btn {
+  width: 20%;
+  height: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #2fac78;
+  border: none;
+  outline: none;
+}
+/*# sourceMappingURL=child.css.map */

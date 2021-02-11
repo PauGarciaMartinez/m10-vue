@@ -1,13 +1,13 @@
 <!-- TEMPLATE -->
 <template>
-  <div>
+  <div class="parent-container">
       <h1>{{ message }}</h1>
-      <Child/>
+      <Child :name="name"/>
   </div>
 </template>
 
 <!-- SCRIPT -->
-<script type="text/javascript" src="./../scripts/parent/parent.js"></script>
+<script type="text/javascript" src="./../scripts/parent.js"></script>
 
 <!-- STYLES -->
-<style src="./../styles/css/parent/parent.css"></style>
+<style src="./../styles/css/parent.css"></style>
