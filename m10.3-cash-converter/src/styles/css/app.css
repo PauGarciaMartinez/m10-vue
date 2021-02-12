@@ -20,7 +20,13 @@
   font-size: 1rem;
 }
 
+.converter::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .close-btn {
+  position: relative;
   background-color: rgb(153, 214, 153);
   border: none;
   border-radius: 0.3rem;
@@ -38,5 +44,6 @@
   background-color: rgb(106, 180, 106);
   color: white;
 }
+
 
 /*# sourceMappingURL=app.css.map */

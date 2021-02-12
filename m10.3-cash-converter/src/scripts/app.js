@@ -7,7 +7,8 @@ export default {
         title: "Currency Converter",
         subtitle: "EUR to USD",
         input: "",
-        output: ""
+        output: "",
+        rate: 1.2123
       }
     },
     methods: {
@@ -18,10 +19,11 @@ export default {
         })
       },
       currencyUSD() {
-        return this.input.toLocaleString( "en-US", {
+        const usdRate = this.input * this.rate
+        return usdRate.toLocaleString("en-US", {
           style: "currency",
           currency: "USD"
-        })
+        }) 
       }
     },
     computed: {
