@@ -8,7 +8,7 @@
     <template v-slot:body>
       <p class="subtitle">{{ subtitle }}</p>
       <input type="number" class="converter" v-model.number="input">
-      <p v-if="input !== '' ">{{ convertCurrency }}</p>
+      <p v-if="input !== ''">{{ convertCurrency }}</p>
     </template>
     
     <template v-slot:footer>

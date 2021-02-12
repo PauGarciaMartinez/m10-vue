@@ -8,7 +8,8 @@ export default {
         subtitle: "EUR to USD",
         input: "",
         output: "",
-        rate: 1.2123
+        rate: 1.2123,
+        regex: /^(?=.)([+-]?([0-9]*)(\.([0-9]+))?)$/
       }
     },
     methods: {
@@ -28,7 +29,7 @@ export default {
     },
     computed: {
       convertCurrency() {
-        return this.output = `${this.currencyEUR()} = ${this.currencyUSD()}`
+        return this.output = `${this.currencyEUR()}  =  ${this.currencyUSD()}`
       }
     },
     components: {
