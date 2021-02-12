@@ -6,4 +6,35 @@
     color: #2c3e50;
     height: 100%;
     width: 100%;
-}
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .converter {
+    width: 75%;
+    height: 2rem;
+    margin-top: 1rem;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .close-btn {
+    background-color: rgb(153, 214, 153);
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    margin-left: 14.2rem;
+    width: 5rem;
+    height: 2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    outline: none;
+  }
+  
+  .close-btn:hover {
+    cursor: pointer;
+    background-color: rgb(106, 180, 106);
+    color: white;
+  }

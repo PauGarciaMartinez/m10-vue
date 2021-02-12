@@ -4,15 +4,16 @@
     <template v-slot:header>
       <h1>{{ title }}</h1>
     </template>
+
     <template v-slot:body>
-      <input type="text" id="converter">
-      <p></p>
-    </template>
-    <template v:slot:footer>
-      <button>Close</button>
+      <p class="subtitle">{{ subtitle }}</p>
+      <input type="text" class="converter" v-model="input">
+      <p>{{ convertCurrency }}</p>
     </template>
     
-
+    <template v-slot:footer>
+      <button class="close-btn">Close</button>
+    </template>
   </Modal>
 </template>
 
