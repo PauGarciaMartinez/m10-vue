@@ -6,15 +6,16 @@ export default {
       return {
         title: "Currency Converter",
         subtitle: "EUR to USD",
+        alternativeTitle: "You have closed the modal",
         input: "",
         output: "",
         rate: 1.2123,
-        regex: /^(?=.)([+-]?([0-9]*)(\.([0-9]+))?)$/
+        showModal: true
       }
     },
     methods: {
       currencyEUR() {
-        return this.input.toLocaleString("es-SP", {
+        return this.input.toLocaleString("de-DE", {
           style: "currency",
           currency: "EUR"
         })
@@ -25,11 +26,15 @@ export default {
           style: "currency",
           currency: "USD"
         }) 
+      },
+      toggleShowModal() {
+        this.showModal = !this.showModal
+        this.input = ""
       }
     },
     computed: {
       convertCurrency() {
-        return this.output = `${this.currencyEUR()}  =  ${this.currencyUSD()}`
+        return this.output = `${this.currencyEUR()} = ${this.currencyUSD()}`
       }
     },
     components: {

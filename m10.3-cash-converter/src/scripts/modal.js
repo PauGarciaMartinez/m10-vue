@@ -1,8 +1,3 @@
 export default {
-    name: "Modal",
-    data() {
-        return {
-            
-        }
-    }
+    name: "Modal"
 }
