@@ -7,15 +7,27 @@
   margin-top: 60px;
 }
 
+/* HEADER */
+
+h1 {
+  font-size: 2.5rem;
+}
+
+span {
+  color: rgb(65, 161, 129);
+}
+
+/* FORM */
+
 form {
   display: flex;
   flex-direction: column;
   width: 400px;
   height:auto;
-  border: 2px solid #2c3e50;
+  border: 2px solid #2c3e509f;
   border-radius: 0.5rem;
   padding: 3rem;
-  margin: 5rem auto;
+  margin: 2rem auto;
   background-color: white;
 }
 
@@ -27,11 +39,20 @@ label {
 
 input {
   font-size: 1rem;
-  margin-bottom: 1.2rem;
-  height: 2rem;
-  border: 1px solid #2c3e50;
+  margin-bottom: 0.5rem;
+  height: 2.5rem;
+  border: 1px solid #2c3e5049;
   border-radius: 0.5rem;
   outline: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #2c3e50e0;
+}
+
+small {
+  margin-bottom: 0.8rem;
+  text-align: left;
+  color: rgb(221, 81, 81);
 }
 
 button {
@@ -48,7 +69,12 @@ button {
 
 button:hover {
   cursor: pointer;
-  color: #2c3e50;
-  background-color: #9ac1e7;
+  background-color: rgb(65, 161, 129);
   transform: scale(1.05, 1.05);
+}
+
+/* VALIDATION */
+
+.invalid {
+  border: 1px solid #db212149;
 }
