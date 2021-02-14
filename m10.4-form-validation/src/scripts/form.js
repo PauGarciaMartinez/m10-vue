@@ -46,18 +46,25 @@ export default {
     
       this.passwordTwo !== this.password ? this.passwordTwoError = "" : 
         this.passwordTwoError = "Passwords don't match"
+    },
+    displayResults() {
+      this.isValid = false
+      
+      if (!this.$refs.name.classList.contains("invalid") && 
+      !this.name == "" &&
+      !this.$refs.number.classList.contains("invalid") && 
+      !this.number == "" &&
+      !this.$refs.postcode.classList.contains("invalid") && 
+      !this.postcode == "" &&
+      !this.$refs.email.classList.contains("invalid") && 
+      !this.email == "" &&
+      !this.$refs.password.classList.contains("invalid") && 
+      !this.password == "" &&
+      !this.$refs.passwordTwo.classList.contains("invalid") &&
+      !this.passwordTwo == "") {
 
-      if (!this.nameError && !this.numberError && !this.postcodeError && !this.emailError && !this.passwordError && !this.passwordTwoError) {
         this.isValid = true
       }
-    },
-    resetForm() {
-      this.name = "",
-      this.number = "",
-      this.postcode = "",
-      this.email = "",
-      this.password = "",
-      this.passwordTwo = ""
     }
   },
   computed: {
