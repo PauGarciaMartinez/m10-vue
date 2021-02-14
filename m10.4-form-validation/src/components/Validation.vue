@@ -1,7 +1,9 @@
 <!-- TEMPLATE -->
 
 <template>
-<h1>Yep</h1>
+  <div class="results-container">
+    <slot name="results"></slot>
+  </div>
 </template>
 
 <!-- SCRIPT -->

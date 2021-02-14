@@ -15,6 +15,7 @@ h1 {
 
 span {
   color: rgb(65, 161, 129);
+  font-weight: 600;
 }
 
 /* FORM */
@@ -23,7 +24,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 400px;
-  height:auto;
+  height: auto;
   border: 2px solid #2c3e509f;
   border-radius: 0.5rem;
   padding: 3rem;
@@ -77,4 +78,8 @@ button:hover {
 
 .invalid {
   border: 1px solid #db212149;
+}
+
+.valid {
+  border: 1px solid #2c3e5049;
 }
