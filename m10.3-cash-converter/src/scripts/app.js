@@ -13,7 +13,6 @@ export default {
   methods: {
     toggleShowModal() {
       this.showModal = !this.showModal
-      this.input = ""
     }
   },
   components: {

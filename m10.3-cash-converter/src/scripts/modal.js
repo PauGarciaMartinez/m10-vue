@@ -3,7 +3,6 @@ export default {
   data() {
     return {
       input: "",
-      output: "",
       rate: 1.2123
     }
   },
@@ -24,7 +23,7 @@ export default {
   },
   computed: {
     convertCurrency() {
-      return this.output = `${this.currencyEUR()} = ${this.currencyUSD()}`
+      return `${this.currencyEUR()} = ${this.currencyUSD()}`
     }
   }
 }
