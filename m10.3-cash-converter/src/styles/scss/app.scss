@@ -8,23 +8,9 @@
   width: 100%;
 }
 
-/* HEADER */
+/* BODY */
 .subtitle {
   font-size: 1.2rem;
-}
-
-/* BODY */
-.converter {
-  width: 75%;
-  height: 2rem;
-  margin-top: 1rem;
-  outline: none;
-  font-size: 1rem;
-}
-
-.converter::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 /* FOOTER */
@@ -61,5 +47,3 @@
 .money {
   width: 200px;
 }
-  
-  
