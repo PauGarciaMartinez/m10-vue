@@ -1,13 +1,14 @@
 <!-- TEMPLATE -->
 <template>
 
-  <Modal v-if="showModal">
+  <Modal v-if="showModal" :sendInput="input">
     <template v-slot:header>
       <h1>{{ title }}</h1>
     </template>
     
     <template v-slot:body>
       <p class="subtitle">{{ subtitle }}</p>
+      <input type="number" class="converter" v-model.number="input"> 
     </template>
 
     <template v-slot:footer>

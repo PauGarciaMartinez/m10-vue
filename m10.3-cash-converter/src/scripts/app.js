@@ -7,6 +7,8 @@ export default {
       title: "Currency Converter",
       subtitle: "EUR to USD",
       alternativeTitle: "You have closed the modal",
+      input: "",
+      input2: "",
       showModal: true
     }
   },

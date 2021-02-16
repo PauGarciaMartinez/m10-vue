@@ -3,9 +3,8 @@
   <div class="backdrop">
     <div class="modal">
       <slot name="header"></slot>
-      <slot name="body"></slot>
-      <input type="number" class="converter" v-model.number="input"> 
-      <p v-if="input !== ''">{{ convertCurrency }}</p>
+      <slot name="body" v-bind="validate(sendInput)"></slot>
+      <p v-if="input2 !== ''">{{ convertCurrency }}</p>
       <slot name="footer"></slot>
    </div>
   </div>

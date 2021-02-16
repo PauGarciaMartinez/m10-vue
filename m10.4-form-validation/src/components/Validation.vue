@@ -1,9 +1,9 @@
 <!-- TEMPLATE -->
 
 <template>
-  <div class="results-container">
-    <slot name="results"></slot>
-  </div>
+  <label>{{ labelName }}</label>
+  <slot v-bind="validateInput(inputName, id, pass)"></slot>
+  <small v-if="!isValid && input2 !== ''">{{ inputError }}</small>
 </template>
 
 <!-- SCRIPT -->

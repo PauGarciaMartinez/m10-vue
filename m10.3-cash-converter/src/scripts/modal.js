@@ -2,19 +2,23 @@ export default {
   name: "Modal",
   data() {
     return {
-      input: "",
-      rate: 1.2123
+      rate: 1.2123,
+      input2: ""
     }
   },
+  props: ["sendInput"],
   methods: {
+    validate(value) {
+      this.input2 = value
+    },
     currencyEUR() {
-      return this.input.toLocaleString("de-DE", {
+      return this.input2.toLocaleString("de-DE", {
         style: "currency",
         currency: "EUR"
       })
     },
     currencyUSD() {
-      const usdRate = this.input * this.rate
+      const usdRate = this.input2 * this.rate
       return usdRate.toLocaleString("en-US", {
         style: "currency",
         currency: "USD"
