@@ -10,3 +10,6 @@
   border-radius: 0.5rem;
   padding: 3rem;
 }
+.invalid {
+  border: 1px solid #db212149;
+}

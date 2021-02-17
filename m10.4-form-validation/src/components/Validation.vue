@@ -2,7 +2,7 @@
 
 <template>
   <label>{{ labelName }}</label>
-  <slot v-bind="validateInput(inputName, id, pass)"></slot>
+  <slot v-bind="validateInput(inputName, id, pass)" @keyup="checkInput"></slot>
   <small v-if="!isValid && input2 !== ''">{{ inputError }}</small>
 </template>
 

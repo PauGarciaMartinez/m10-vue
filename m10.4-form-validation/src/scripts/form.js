@@ -17,12 +17,13 @@ export default {
       postcodeTitle: "Postal Code",
       emailTitle: "Email",
       passwordTitle: "Password",
-      passwordTwoTitle: "Confirm your password"
+      passwordTwoTitle: "Confirm your password",
 
+      isValid: false
     }
   },
   methods: {
-    submitForm() {
+/*     submitForm() {
       this.name.match(this.nameRegex) ? this.nameError = "" : 
         this.nameError = "Name must be between 6 and 13 letters"
     
@@ -40,9 +41,10 @@ export default {
     
       this.passwordTwo !== this.password ? this.passwordTwoError = "" : 
         this.passwordTwoError = "Passwords don't match"
-    },
-    displayResults() {
-      
+    }, */
+    validateInput(isValid) {
+      this.isValid = isValid
+      console.log(this.isValid)
     }
   }
 }

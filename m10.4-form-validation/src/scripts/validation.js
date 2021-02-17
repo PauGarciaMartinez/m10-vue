@@ -1,6 +1,7 @@
 export default {
   name: "Validation",
   props: ["inputName", "labelName", "id", "pass"],
+  emits: ["checkInput"],
   data() {
     return {
       input2: "",
@@ -67,6 +68,9 @@ export default {
           this.isValid = false
         }
       }
+    },
+    checkInput() {
+      this.$emit("checkInput", this.isValid)
     }
   }
 }
